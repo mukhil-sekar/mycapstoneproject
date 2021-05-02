@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.flexbox{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin: 2% 7%;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.button{
+    background-color: tomato;
+    padding:7px;
+}
+body{
+    overflow:auto;
+    background:(to bottom,#e2e2e2,#ffffff);
+    font-family:Tahoma;
+   /* font: size 15px;*/
+}
+.TopImage{
+    position:relative;
+    left:110px;
+    z-index:2;
+    width:400px;
+    margin-top: 60px;
+}
+.animatedcorona{
+    height: min-content;
+    animation: MoveUpDown 10s linear infinite;
+    position:absolute;
+    right: 150px;
+}
+@keyframes MoveUpDown{
+    0%,100%{
+        top: 180px;
+    }
+    50%{
+        top: 280px;
+    }
+}
+/*heading tag styling*/
+h1{
+    text-align: center;
+    font-size: 3em;
+    color:indigo;
+   /* text-shadow: 0px 1px 2px #000;*/
+
+}
+h2{
+    text-align: left;
+    color:yellowgreen;
+    margin-left: 120px;
+
+}
+h3{
+    text-align: left;
+    font-size: 2em;
+    color:yellowgreen;
+    background: wheat;
+    padding-left: 120px;
+}
+
+
+/*default shadow style*/
+
+.shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+/*details box style*/
+.detailsbox{
+    width:80%;
+  height:150px;
+  background-color:white;
+  position:relative;
+  left:120px;
+  line-height: 1.5em;
+  padding:25px;
+  margin-bottom: 50px;
+  border-left:5px solid #f70d0d;
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.list{
+    position:absolute;
+    left:110px;
+    background:#fff;
+    width:400px;
+    z-index:3;
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    overflow:hidden;
+}
+.list li a {
+    width:400px;
+    padding-left:15px;
+    height:40px;
+    line-height:40px;
+    display:block;
+    overflow:hidden;
+    position:relative;
+    text-decoration:none;
+    font-size:  25px;
+    color:#0e0909;      
+  }
+  #TblCon{
+      background: #efefef;
+  }
+  .Tbl{
+      
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: 15px;
+  }
